@@ -67,6 +67,15 @@ Have a bug or a feature request? Before opening a new issue search for existing 
 
 
 ********************************************************************************
+## Installation
+
+1. Download and copy files to your project
+2. Add CSS to your project:
+```html
+    <link href="https://example.com/fa-animations/1.x.x/fa-animations.min.css" rel="stylesheet">
+```
+3. Ready to use!
+
 
 
 
