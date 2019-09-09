@@ -1,0 +1,399 @@
+<!--
+ *  Font Awesome Animations 
+ *  v1.0.0
+ *  https://github.com/the-muda-organization/font-awesome-animations
+ *  MIT License
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Font Awesome Animations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fontawesome.com/images/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+/******************* ANIMATIONS *******************/
+
+/**** BOUNCE ****/
+    @keyframes bounce{0%,10%,20%,50%,80%,100%{transform:translateY(0)}40%,60%{transform:translateY(-15px)}}
+    .faa.faa-bounce,
+    .faa-parent:hover .faa-bounce{
+        animation-name:bounce
+    }
+
+/**** BURST ****/
+    @keyframes burst{0%{opacity:.6}50%{transform:scale(1.8);opacity:0}100%{opacity:0}}
+    .faa.faa-burst,
+    .faa-parent:hover .faa-burst{
+        animation-name:burst;
+        animation-timing-function:linear
+    }
+
+/**** FALLING ****/
+    @keyframes falling{0%{transform:translateY(-50%);opacity:0}50%{transform:translateY(0%);opacity:1}100%{transform:translateY(50%);opacity:0}}
+    .faa.faa-falling,
+    .faa-parent:hover .faa-falling{
+        animation-name:falling;
+        animation-timing-function:linear
+    }
+
+/**** FLASH ****/
+    @keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}
+    .faa.faa-flash,
+    .faa-parent:hover .faa-flash{
+        animation-name:flash
+    }
+
+/**** FLIP X ****/
+    @keyframes flipX{0%,100%{transform:rotate3d(1,0,0,90deg)}40%{transform:rotate3d(1,0,0,-20deg)}60%{transform:rotate3d(1,0,0,10deg)}80%{transform:rotate3d(1,0,0,-5deg)}}
+    .faa.faa-flip-x,
+    .faa-parent:hover .faa-flip-x{
+        animation-name:flipX
+    }
+
+/**** FLIP Y ****/
+    @keyframes flipY{0%,100%{transform:rotate3d(0,1,0,90deg)}40%{transform:rotate3d(0,1,0,-20deg)}60%{transform:rotate3d(0,1,0,10deg)}80%{transform:rotate3d(0,1,0,-5deg)}}
+    .faa.faa-flip-y,
+    .faa-parent:hover .faa-flip-y{
+        animation-name:flipY
+    }
+
+/**** FLOATING ****/
+    @keyframes floating{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    .faa.faa-floating,
+    .faa-parent:hover .faa-floating{
+        animation-name:floating;
+        animation-timing-function:linear
+    }
+
+/**** PULSE ****/
+    @keyframes pulse{0%,100%{transform:scale(1.1)}50%{transform:scale(.75)}}
+    .faa.faa-pulse,
+    .faa-parent:hover .faa-pulse{
+        animation-name:pulse;
+        animation-timing-function:linear
+    }
+
+/**** RING ****/
+    @keyframes ring{0%{transform:rotate(-15deg)}2%{transform:rotate(15deg)}4%,12%{transform:rotate(-18deg)}6%,14%{transform:rotate(18deg)}8%{transform:rotate(-22deg)}10%{transform:rotate(22deg)}16%{transform:rotate(-12deg)}18%{transform:rotate(12deg)}20%,100%{transform:rotate(0deg)}}
+    .faa.faa-ring,
+    .faa-parent:hover .faa-ring{
+        animation-name:ring
+    }
+
+/**** RUBBER BAND ****/
+    @keyframes rubberBand{0%,100%{transform:scale(1,1)}30%{transform:scale(1.25,.85)}40%{transform:scale(.75,1.25)}50%{transform:scale(1.15,.85)}65%{transform:scale(.95,1.05)}75%{transform:scale(1.05,.95)}}
+    .faa.faa-rubber-band,
+    .faa-parent:hover .faa-rubber-band{
+        animation-name:rubberBand
+    }
+
+/**** SHAKE X ****/
+    @keyframes shakeX{0%,12%,24%,36%,100%{transform:translate(0,0)}6%,18%,30%{transform:translate(5px,0)}}
+    .faa.faa-shake-x,
+    .faa-parent:hover .faa-shake-x{
+        animation-name:shakeX
+    }
+
+/**** SHAKE Y ****/
+    @keyframes shakeY{0%,12%,24%,36%,100%{transform:translate(0,0)}6%,18%,30%{transform:translate(0,5px)}}
+    .faa.faa-shake-y,
+    .faa-parent:hover .faa-shake-y{
+        animation-name:shakeY
+    }
+
+/**** SLIDE LEFT ****/
+    @keyframes slideLeft{0%{transform:translateX(50%);opacity:0}50%{transform:translateX(0%);opacity:1}100%{transform:translateX(-50%);opacity:0}}
+    .faa.faa-slide-left,
+    .faa-parent:hover .faa-slide-left{
+        animation-name:slideLeft;
+        animation-timing-function:linear
+    }
+
+/**** SLIDE RIGHT ****/
+    @keyframes slideRight{0%{transform:translateX(-50%);opacity:0}50%{transform:translateX(0%);opacity:1}100%{transform:translateX(50%);opacity:0}}
+    .faa.faa-slide-right,
+    .faa-parent:hover .faa-slide-right{
+        animation-name:slideRight;
+        animation-timing-function:linear
+    }
+
+/**** SWING ****/
+    @keyframes swing{0%{transform:rotate(-12deg)}8%{transform:rotate(12deg)}10%,28%,30%,48%,50%,68%{transform:rotate(24deg)}18%,20%,38%,40%,58%,60%{transform:rotate(-24deg)}75%,100%{transform:rotate(0deg)}}
+    .faa.faa-swing,
+    .faa-parent:hover .faa-swing{
+        animation-name:swing
+    }
+
+/**** TADA ****/
+    @keyframes tada{0%,80%,100%{transform:scale(1) rotate(0)}10%,20%{transform:scale(.9) rotate(-10deg)}30%,50%,70%{transform:scale(1.3) rotate(10deg)}40%,60%{transform:scale(1.3) rotate(-10deg)}}
+    .faa.faa-tada,
+    .faa-parent:hover .faa-tada{
+        animation-name:tada;
+        animation-timing-function:linear
+    }
+
+
+
+/******************* GENERAL *******************/
+.faa,
+.faa-parent [class*="faa-"]{
+    animation-duration:2s;
+    animation-fill-mode:both;
+    animation-iteration-count:infinite
+}
+
+/******************* MEDIA *******************/
+@media (print),(prefers-reduced-motion:reduce){
+    .faa,
+    .faa-parent [class*="faa-"]{
+        animation-duration:1ms!important;
+        transition-duration:1ms!important;
+        animation-iteration-count:1!important
+    }
+}
+
+</style>
+
+</head>
+<body class="py-5" style="background:url(https://i.imgur.com/99r3MBm.jpg) center/cover no-repeat fixed">
+    
+<main class="container">
+    
+    <div class="row justify-content-center mb-5">
+        <div class="col-6">
+            <div class="card border-dark shadow">
+                <div class="card-header bg-success text-light text-center">
+                    <h1 class="h3 m-0"><i class="fab fa-font-awesome-logo-full"></i> Animations</h1>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">CSS animations for <i class="fab fa-font-awesome-logo-full"></i> icons. Easy to use, regular or on hover, and lightweight <mark>&lt;4kb minified</mark> and <mark>&lt;1kb gzipped</mark>.</p>
+                    <p class="card-text">Animations work with any <i class="fab fa-font-awesome-logo-full"></i> prefix <code>fad</code>, <code>fal</code>, <code>far</code> and <code>fas</code>. Not tested on other icon librairies but it should work with little or no customization.</p>
+                    <p class="card-text"><i class="fab fa-font-awesome-logo-full"></i> has 2 default animations (not included here):</p>
+                    <div class="d-flex justify-content-around">
+                        <div><code>fa-spin</code><i class="fas fa-lg fa-spinner fa-spin ml-2"></i></div>
+                        <div><code>fa-pulse</code><i class="fas fa-lg fa-spinner fa-pulse ml-2"></i></div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <div>Code released under the <a href="https://github.com/the-muda-organization/font-awesome-animations/blob/master/LICENSE" target="_blank">MIT Licence</a>.</div>
+                    <div><a class="text-dark" href="https://github.com/the-muda-organization/font-awesome-animations" target="_blank"><i class="fab fa-lg fa-github"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-around">
+        
+        
+        
+        <!--****************************************************************************************************
+                                                    REGULAR
+        ****************************************************************************************************-->
+        <section class="col-md-5">
+            <div class="card border-dark shadow">
+                <div class="card-header">
+                    <h2 class="h4 m-0 text-center">Regular <code>.faa</code></h2>
+                </div>
+                <div class="card-body">
+                    <div class="h6">How to use?</div>
+                    <div class="mb-2">Add <code>faa</code> and <code>faa-animation-name</code> classess to the icon.</div>
+                    <code class="d-block"><span class="text-primary">&lt;i class="fad fa-camera</span> faa faa-bounce<span class="text-primary">"&gt;&lt;/i&gt;</span></code>
+                    <code class="d-block"><span class="text-primary">&lt;i class="fal fa-camera</span> faa faa-pulse<span class="text-primary">"&gt;&lt;/i&gt;</span></code>
+                    <code class="d-block"><span class="text-primary">&lt;i class="far fa-camera</span> faa faa-shake-x<span class="text-primary">"&gt;&lt;/i&gt;</span></code>
+                    <code class="d-block"><span class="text-primary">&lt;i class="fas fa-camera</span> faa faa-tada<span class="text-primary">"&gt;&lt;/i&gt;</span></code>
+                </div>
+                <div class="card-body">
+                    <div class="h6">Animations:</div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-camera               faa faa-bounce"     ></i><code>faa-bounce     </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-circle               faa faa-burst"      ></i><code>faa-burst      </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-star                 faa faa-falling"    ></i><code>faa-falling    </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-exclamation-triangle faa faa-flash"      ></i><code>faa-flash      </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-images               faa faa-flip-x"     ></i><code>faa-flip-x     </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-envelope             faa faa-flip-y"     ></i><code>faa-flip-y     </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-map-marker-alt       faa faa-floating"   ></i><code>faa-float      </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-info-circle          faa faa-pulse"      ></i><code>faa-pulse      </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-bell                 faa faa-ring"       ></i><code>faa-ring       </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-arrows-alt-h         faa faa-rubber-band"></i><code>faa-rubber-band</code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-angle-double-left    faa faa-slide-left" ></i><code>faa-slide-left </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-angle-double-right   faa faa-slide-right"></i><code>faa-slide-right</code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-check-square         faa faa-shake-x"    ></i><code>faa-shake-x    </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-thumbs-up            faa faa-shake-y"    ></i><code>faa-shake-y    </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-lock                 faa faa-swing"      ></i><code>faa-swing      </code></li>
+                        <li class="list-group-item"><i class="mr-3 fas fa-lg fa-fw fa-trophy               faa faa-tada"       ></i><code>faa-tada       </code></li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <div class="h5 m-0">Examples:</div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-danger">
+                        <i class="fas fa-lg fa-bell faa faa-ring"></i>
+                        <span class="ml-3 mr-2">Notifications</span>
+                        <span class="badge badge-light">14</span>
+                    </button>
+                </div>
+                <div class="card-footer">
+                    <div class="alert m-0 media align-items-center" role="alert" style="background:linear-gradient(to bottom right,#FF9500,#FC0)!important">
+                        <div class="mr-4">
+                            <i class="fas fa-3x fa-fw fa-exclamation-triangle faa faa-flash"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="h5 alert-heading">Warning!</div>
+                            <div>Bacon ipsum dolor sit amet, consectet adipiscing sed decora maxima.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group btn-group-lg w-100" role="group" aria-label="Basic example">
+                        <button class="btn btn-success w-50"><i class="fas fa-lg fa-fw fa-thumbs-up faa faa-shake-y"></i></button>
+                        <button class="btn btn-danger w-50"><i class="fas fa-lg fa-fw fa-thumbs-down faa faa-pulse"></i></button>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="input-group shadow">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bg-dark border-dark text-light"><i class="fas fa-lg fa-fw fa-at faa faa-tada"></i></div>
+                        </div>
+                        <input type="email" class="form-control border-dark" placeholder="Email adress:">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-primary">
+                        <i class="fas fa-lock faa faa-swing"></i>
+                        <span class="font-weight-bold mx-3">Sign in</span>
+                        <i class="fas fa-angle-double-right faa faa-slide-right"></i>
+                    </button>
+                </div>
+                <div class="card-footer">
+                    <nav class="" aria-label="Page navigation">
+                        <ul class="pagination m-0 justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true"><i class="fas fa-fw fa-angle-double-left faa faa-slide-left"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fas fa-fw fa-angle-double-right faa faa-slide-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        
+        
+        <!--****************************************************************************************************
+                                                ON PARENT HOVER
+        ****************************************************************************************************-->
+        <section class="col-md-5">
+            <div class="card border-dark shadow">
+                <div class="card-header">
+                    <h2 class="h4 m-0 text-center">On parent hover <code>.faa-parent</code></h2>
+                </div>
+                <div class="card-body">
+                    <div class="h6">How to use?</div>
+                    <div class="mb-2">Add <code>faa-animation-name</code> class to the icon and <code>faa-parent</code> class to any ancestor. Hover over to start animation.</div>
+                    <code class="d-block"><span class="text-primary">&lt;div class="</span>faa-parent<span class="text-primary">"&gt;</span></code>
+                    <code class="d-block pl-3"><span class="text-primary">&lt;i class="fas fa-camera</span> faa-bounce<span class="text-primary">"&gt;&lt;/i&gt;</span></code>
+                    <code class="d-block text-primary">&lt;/div&gt;</code>
+                </div>
+                <div class="card-body">
+                    <div class="h6">Animations:</div>
+                    <ul class="list-group">
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-camera               faa-bounce"     ></i><code>faa-bounce     </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-circle               faa-burst"      ></i><code>faa-burst      </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-star                 faa-falling"    ></i><code>faa-falling    </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-exclamation-triangle faa-flash"      ></i><code>faa-flash      </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-images               faa-flip-x"     ></i><code>faa-flip-x     </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-envelope             faa-flip-y"     ></i><code>faa-flip-y     </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-map-marker-alt       faa-floating"   ></i><code>faa-float      </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-info-circle          faa-pulse"      ></i><code>faa-pulse      </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-bell                 faa-ring"       ></i><code>faa-ring       </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-arrows-alt-h         faa-rubber-band"></i><code>faa-rubber-band</code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-angle-double-left    faa-slide-left" ></i><code>faa-slide-left </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-angle-double-right   faa-slide-right"></i><code>faa-slide-right</code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-check-square         faa-shake-x"    ></i><code>faa-shake-x    </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-thumbs-up            faa-shake-y"    ></i><code>faa-shake-y    </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-lock                 faa-swing"      ></i><code>faa-swing      </code></li>
+                        <li class="list-group-item faa-parent"><i class="mr-3 fas fa-lg fa-fw fa-trophy               faa-tada"       ></i><code>faa-tada       </code></li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <div class="h5 mb-0">Examples:</div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-danger faa-parent">
+                        <i class="fas fa-lg fa-bell faa-ring"></i>
+                        <span class="ml-3 mr-2">Notifications</span>
+                        <span class="badge badge-light">14</span>
+                    </button>
+                </div>
+                <div class="card-footer">
+                    <div class="alert m-0 media align-items-center faa-parent" role="alert" style="background:linear-gradient(to bottom right,#FF9500,#FC0)!important">
+                        <div class="mr-4">
+                            <i class="fas fa-3x fa-fw fa-exclamation-triangle faa-flash"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="h5 alert-heading">Warning!</div>
+                            <div>Bacon ipsum dolor sit amet, consectetur adipiscing sed.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group btn-group-lg w-100 faa-parent" role="group" aria-label="Basic example">
+                        <button class="btn btn-success w-50"><i class="fas fa-lg fa-fw fa-thumbs-up faa-shake-y"></i></button>
+                        <button class="btn btn-danger w-50"><i class="fas fa-lg fa-fw fa-thumbs-down faa-pulse"></i></button>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="input-group faa-parent shadow">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bg-dark border-dark text-light"><i class="fas fa-lg fa-fw fa-at faa-tada"></i></div>
+                        </div>
+                        <input type="email" class="form-control border-dark" placeholder="Email adress:">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block btn-primary faa-parent">
+                        <i class="fas fa-lock faa-swing"></i>
+                        <span class="font-weight-bold mx-3">Sign in</span>
+                        <i class="fas fa-angle-double-right faa-slide-right"></i>
+                    </button>
+                </div>
+                <div class="card-footer">
+                    <nav class="faa-parent" aria-label="Page navigation">
+                        <ul class="pagination m-0 justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true"><i class="fas fa-fw fa-angle-double-left faa-slide-left"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fas fa-fw fa-angle-double-right faa-slide-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</main>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"></script>
+
+</body>
+</html>
