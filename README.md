@@ -28,8 +28,6 @@ CSS animations for Font Awesome (and other icon libraries!).
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Installation](#installation)
 - [How to Use](#how-to-use)
-- [Features](#features)
-- [CSS Classes](#css-classes)
 - [Versioning](#versioning)
 - [Changelog](#changelog)
 - [Team](#team)
@@ -77,6 +75,8 @@ Have a bug or a feature request? Before opening a new issue search for existing 
 3. Ready to use!
 
 
+********************************************************************************
+## How to Use
 
 
 
