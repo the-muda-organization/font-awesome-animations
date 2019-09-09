@@ -80,6 +80,60 @@ Have a bug or a feature request? Before opening a new issue search for existing 
 
 Animations work with any Font Awesome prefix `fad`, `fal`, `far` and `fas`. Not tested on other icon librairies but it should work with little or no customization.
 
+This library does not include default Font Awesome animations: `fa-spin` and `fa-pulse`.
+
+Font Awesome Animations uses custom classes `.faa` or `.faa-parent` and custom prefix `faa-`.
+
+There are 2 types of animations: **regular** and **on hover**.
+
+### A) Regular animations
+Add `faa` and `faa-animation-name` classess to the icon.
+```html
+<i class="fad fa-camera faa faa-bounce"></i>
+<i class="fal fa-camera faa faa-pulse"></i>
+<i class="far fa-camera faa faa-shake-x"></i>
+<i class="fas fa-camera faa faa-tada"></i>
+```
+
+### B) On hover animations
+Add `faa-animation-name` class to the icon and `faa-parent` class to any ancesto elementr. Hover over to start animation.
+```html
+<div class="faa-parent">
+    <i class="fas fa-camera faa-bounce"></i>
+</div>
+
+<div class="faa-parent">
+    
+    <!--ICON 1-->
+    <div class="some-class">
+        <i class="fas fa-camera faa-bounce"></i>
+    </div>
+    
+    <!--ICON 2-->
+    <i class="fas fa-angle-double-right faa-slide-right"></i>
+ 
+</div>
+```
+
+### Available animations:
+* `faa-bounce`
+* `faa-burst`
+* `faa-falling`
+* `faa-flash`
+* `faa-flip-x`
+* `faa-flip-y`
+* `faa-float`
+* `faa-pulse`
+* `faa-ring`
+* `faa-rubber-band`
+* `faa-slide-left`
+* `faa-slide-right`
+* `faa-shake-x`
+* `faa-shake-y`
+* `faa-swing`
+* `faa-tada`
+
++ Default Font Awesome animations `fa-spin` and `fa-pulse`.
 
 
 ********************************************************************************
