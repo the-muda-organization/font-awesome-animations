@@ -16,7 +16,7 @@ CSS animations for Font Awesome (and other icon libraries!).
 [![License Code](https://poser.pugx.org/the-muda-organization/font-awesome-animations/license)](https://packagist.org/packages/the-muda-organization/font-awesome-animations)
 
 
-## [View Preview](https://htmlpreview.github.io/?https://github.com/the-muda-organization/font-awesome-animations/blob/master/DEMO.html)
+## [View Preview](https://rawcdn.githack.com/the-muda-organization/font-awesome-animations/82044da336ac003f93052ddbb617c57b52d093c5/DEMO.html)
 <img src="https://github.com/the-muda-organization/font-awesome-animations/blob/master/PREVIEW.jpg?raw=true" alt="" style="width:100%;display:block;">
 
 
@@ -61,7 +61,7 @@ fa-animations/
 
 ********************************************************************************
 ## Bugs and feature requests
-Have a bug or a feature request? Before opening a new issue search for existing and closed issues. If your problem or idea is not addressed yet, [open a new issue](https://github.com/the-muda-organization/youtube-lazyload/issues/new).
+Have a bug or a feature request? Before opening a new issue search for existing and closed issues. If your problem or idea is not addressed yet, [open a new issue](https://github.com/the-muda-organization/font-awesome-animations/issues/new).
 
 
 ********************************************************************************
@@ -78,12 +78,13 @@ Have a bug or a feature request? Before opening a new issue search for existing 
 ********************************************************************************
 ## How to Use
 
+Animations work with any Font Awesome prefix `fad`, `fal`, `far` and `fas`. Not tested on other icon librairies but it should work with little or no customization.
 
 
 
 ********************************************************************************
 ## Versioning
-Youtube LazyLoad will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
+Font Awesome Animations will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
 ```<major>.<minor>.<patch>```
 
 
