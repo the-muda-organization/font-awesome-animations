@@ -20,7 +20,30 @@ CSS animations for Font Awesome (and other icon libraries!).
 <img src="https://github.com/the-muda-organization/font-awesome-animations/blob/master/PREVIEW.jpg?raw=true" alt="" style="width:100%;display:block;">
 
 
+********************************************************************************
+## Table of contents
+- [Status](#status)
+- [Quick Start](#quick-start)
+- [What's included](#whats-included)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Installation](#installation)
+- [How to Use](#how-to-use)
+- [Features](#features)
+- [CSS Classes](#css-classes)
+- [Versioning](#versioning)
+- [Changelog](#changelog)
+- [Team](#team)
+- [Code of Conduct](#code-of-conduct)
+- [Copyright and License](#copyright-and-license)
 
+
+********************************************************************************
+## Quick Start
+
+Several options are available:
+- [Download the latest release.](https://github.com/the-muda-organization/font-awesome-animations/archive/master.zip)
+- Clone the repo: `git clone https://github.com/the-muda-organization/font-awesome-animations.git`
+- Install with [Composer](https://getcomposer.org/): `composer require the-muda-organization/font-awesome-animations`
 
 
 ********************************************************************************
