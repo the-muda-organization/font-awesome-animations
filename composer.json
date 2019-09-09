@@ -1,0 +1,22 @@
+{
+    "name": "the-muda-organization/font-awesome-animations",
+    "description": "CSS animations for Font Awesome (and other icon libraries!).",
+    "keywords": [
+        "css",
+        "css-animations",
+        "font-awesome",
+        "font-awesome-5",
+        "animation",
+        "icons",
+        "icon-animation",
+        "muda"
+    ],
+    "readme": "/README.md",
+    "authors": [
+        {
+            "name": "Jakub Muda",
+            "email": "info@muda.pl"
+        }
+    ],
+    "license": "MIT"
+}
