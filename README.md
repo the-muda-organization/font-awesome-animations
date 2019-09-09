@@ -96,7 +96,7 @@ Add `faa` and `faa-animation-name` classess to the icon.
 ```
 
 ### B) On hover animations
-Add `faa-animation-name` class to the icon and `faa-parent` class to any ancesto elementr. Hover over to start animation.
+Add `faa-animation-name` class to the icon and `faa-parent` class to any ancestor element. Hover over to start animation.
 ```html
 <div class="faa-parent">
     <i class="fas fa-camera faa-bounce"></i>
