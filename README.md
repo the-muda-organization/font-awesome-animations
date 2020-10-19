@@ -4,19 +4,20 @@ CSS animations for Font Awesome (and other icon libraries!).
 
 ********************************************************************************
 ## Status
-[![Latest Stable Version](https://poser.pugx.org/the-muda-organization/font-awesome-animations/version)](https://packagist.org/packages/the-muda-organization/font-awesome-animations)
-[![Latest Unstable Version](https://poser.pugx.org/the-muda-organization/font-awesome-animations/v/unstable)](https://packagist.org/packages/the-muda-organization/font-awesome-animations)
-
-[![Total Downloads](https://poser.pugx.org/the-muda-organization/font-awesome-animations/downloads)](https://packagist.org/packages/the-muda-organization/font-awesome-animations)
-[![Monthly Downloads](https://poser.pugx.org/the-muda-organization/font-awesome-animations/d/monthly)](https://packagist.org/packages/the-muda-organization/font-awesome-animations)
-[![Daily Downloads](https://poser.pugx.org/the-muda-organization/font-awesome-animations/d/daily)](https://packagist.org/packages/the-muda-organization/font-awesome-animations)
-
-[![CSS gzip size](https://img.badgesize.io/the-muda-organization/font-awesome-animations/master/fa-animations/1.0.0/fa-animations.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/the-muda-organization/font-awesome-animations/blob/master/fa-animations/1.0.0/fa-animations.min.css)
-
-[![License Code](https://poser.pugx.org/the-muda-organization/font-awesome-animations/license)](https://packagist.org/packages/the-muda-organization/font-awesome-animations)
+[![GitHub Version](https://img.shields.io/github/release/the-muda-organization/font-awesome-animations.svg?style=for-the-badge)](https://github.com/the-muda-organization/font-awesome-animations)
+[![License](https://img.shields.io/github/license/the-muda-organization/font-awesome-animations.svg?style=for-the-badge)](https://github.com/the-muda-organization/font-awesome-animations)
 
 
+[![Github Star](https://img.shields.io/github/stars/the-muda-organization/font-awesome-animations.svg?style=for-the-badge)](https://github.com/the-muda-organization/font-awesome-animations)
+[![Github Fork](https://img.shields.io/github/forks/the-muda-organization/font-awesome-animations.svg?style=for-the-badge)](https://github.com/the-muda-organization/font-awesome-animations)
+
+[![CSS gzip size](https://img.badgesize.io/the-muda-organization/font-awesome-animations/master/dist/fa-animations.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/the-muda-organization/font-awesome-animations/blob/master/dist/fa-animations.min.css)
+
+
+********************************************************************************
 ## [View Preview](https://rawcdn.githack.com/the-muda-organization/font-awesome-animations/82044da336ac003f93052ddbb617c57b52d093c5/DEMO.html)
+********************************************************************************
+
 <img src="https://github.com/the-muda-organization/font-awesome-animations/blob/master/PREVIEW.jpg?raw=true" alt="" style="width:100%;display:block;">
 
 
@@ -52,7 +53,7 @@ There are no dependencies. Library is designed for Font Awesome 5. See below for
 ```
 fa-animations/
  │
- └─ 1.x.x/
+ └─ dist/
     │
     ├── fa-animations.css
     └── fa-animations.min.css
