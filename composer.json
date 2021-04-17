@@ -2,14 +2,11 @@
     "name": "the-muda-organization/font-awesome-animations",
     "description": "CSS animations for Font Awesome (and other icon libraries!).",
     "keywords": [
+        "animation",
         "css",
         "css-animations",
         "font-awesome",
-        "font-awesome-5",
-        "animation",
-        "icons",
-        "icon-animation",
-        "muda"
+        "icons"
     ],
     "readme": "/README.md",
     "authors": [
